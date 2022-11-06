@@ -1,0 +1,11 @@
+.repoCardBullets{
+    width: 80%;
+    height: 40px;
+    border: 2px solid green;
+    padding: 0px;
+    display: flex;
+}
+
+h2{
+    margin: 0;
+}

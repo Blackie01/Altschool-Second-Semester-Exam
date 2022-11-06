@@ -1,0 +1,22 @@
+.backButton {
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: small;
+    margin: 10px 0 0 10px;
+    position: sticky;
+    top: 10px;
+    
+  }
+
+  .repoPageContainer{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    /* align-items: center; */
+    justify-content: center;
+    width: 100vw;
+    border: 2px solid yellow;
+  }
