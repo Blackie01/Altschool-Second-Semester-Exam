@@ -1,0 +1,18 @@
+.readMorePage{
+padding-top: 15%;
+}
+
+.details-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 2% 0 2% 5% ;
+    background-color: #0f3017;
+    width: 80%;
+    height: 200px
+}
+
+.detail{
+    color: blue;
+}

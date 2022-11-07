@@ -6,7 +6,7 @@
     margin: 10px 0 0 10px;
     position: sticky;
     top: 10px;
-    
+
   }
 
   .repoPageContainer{
@@ -18,5 +18,4 @@
     /* align-items: center; */
     justify-content: center;
     width: 100vw;
-    border: 2px solid yellow;
   }
