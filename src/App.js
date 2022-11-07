@@ -8,7 +8,6 @@ import ReadMore from "./Components/repoItemMore";
 
 function App() {
   return (
-
     <section className="main-container">
       <Routes>
         <Route path="/" element={<LandingPage />} />

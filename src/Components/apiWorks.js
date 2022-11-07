@@ -2,17 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import RepoCards from "./repoCards";
 import Pagination from "./pagination";
-import './apiWorks.css';
-
+import "./apiWorks.css";
 
 const ApiWorks = () => {
-    
-
   // set state for each repo
   const [repo, setRepo] = useState([]);
 
   // set state for the pages
-//   const [repoPages, setRepoPages] = useState(1);
+  //   const [repoPages, setRepoPages] = useState(1);
 
   // states for paginatoin
   const [currentPage, setCurrentPage] = useState(1);
@@ -41,16 +38,31 @@ const ApiWorks = () => {
 
   return (
     <section className="repoPageContainer">
-      <Link to="/">
-        <button className="backButton">Go back</button>
-      </Link>
-      {repo?.length === 0 && <h1 className="loader">Loading...</h1>}
-      <RepoCards repo={currentRepo} />
-      <Pagination
-        repoPerPage={repoPerPage}
-        totalRepo={repo?.length}
-        paginate={paginate}
-      />
+      <section className="backButtonSection">
+        <Link to="/">
+          <button className="backButton">Go back</button>
+        </Link>
+      </section>
+
+      <section className="loadingSection">
+        {repo?.length === 0 && <h1 className="loader">Loading...</h1>}
+      </section>
+
+      <section className="apiWorksHeader">
+        {repo?.length >= 1 && <h2>List of my GitHub Repos</h2>}
+      </section>
+
+      <section className="repoCardsSection">
+        <RepoCards repo={currentRepo} />
+      </section>
+
+      <section className="paginationSection">
+        <Pagination
+          repoPerPage={repoPerPage}
+          totalRepo={repo?.length}
+          paginate={paginate}
+        />
+      </section>
     </section>
   );
 };

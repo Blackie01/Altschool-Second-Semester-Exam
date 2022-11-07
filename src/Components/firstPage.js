@@ -9,7 +9,7 @@ function LandingPage() {
       <h3 className="jumbo-mini-text">Altschool Exam Project</h3>
       <h3 className="jumbo-mini-text">Question 1</h3>
       <Link to="/apiWorks">
-        <button>Click me</button>
+        <button className="homeButton">Click me</button>
       </Link>
     </section>
   );

@@ -15,25 +15,25 @@ function ReadMore() {
   return (
     <section className="readMorePage">
       <Link to="/apiWorks">
-        <button className="backButton">Go back</button>
+        <button className="readMoreBackButton">Go back</button>
       </Link>
-      <div className="details-container">
-        <h1 style={{ color: "white" }}>
-          <span className="detail">Project Name:</span> {finalData[0].name}
-        </h1>
-        <h3 style={{ color: "white" }}>
-          <span className="detail">Description:</span>{" "}
-          {finalData[0].description}
-        </h3>
-        <h3 style={{ color: "white" }}>
-          <span className="detail">Creator:</span> {finalData[0].owner.login}
-        </h3>
-        <h3 style={{ color: "white" }}>
-          <span className="detail">Tech:</span> {finalData[0].language}
-        </h3>
-        <h3 style={{ color: "white" }}>
-          <span className="detail">Link:</span> {finalData[0].archive_url}
-        </h3>
+
+      <div className="readMore-container">
+        <h1 className="readMore-title">{finalData[0].name}</h1>
+        <div className="details-container">
+          <h3>
+            <span className="detail">Description:</span> {finalData[0].description || "('_') oops. no info"}
+          </h3>
+          <h3>
+            <span className="detail">Creator:</span> <a target="_blank" rel="noopener noreferrer" className="linkedIn" href={finalData[0].owner.html_url}>{finalData[0].owner.login}</a> 
+          </h3>
+          <h3>
+            <span className="detail">Tech:</span> {finalData[0].language}
+          </h3>
+          <h3>
+            <span className="detail">Link:</span> <a target="_blank" rel="noopener noreferrer" className="linkedIn" href={finalData[0].html_url}>Click Link</a> 
+          </h3>
+        </div>
       </div>
     </section>
   );

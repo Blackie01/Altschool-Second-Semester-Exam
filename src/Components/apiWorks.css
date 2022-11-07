@@ -1,21 +1,50 @@
 .backButton {
     width: 70px;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: small;
-    margin: 10px 0 0 10px;
     position: sticky;
     top: 10px;
+    color: #fff;
+    background-color: #0a1f0f;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #84a08b;
+  }
 
+  .backButton:hover{
+    color: #84a08b;
+  }
+
+  .backButtonSection{
+    margin: 20px 20px;
+  }
+
+  .apiWorksHeader{
+    margin-top: -100px;
+    color:#3c4b40;
+    font-size: medium;
+    text-align: center;
+    text-decoration: underline;
   }
 
   .repoPageContainer{
     display: flex;
-    gap: 30px;
     flex-direction: column;
     height: 100vh;
     color: white;
-    /* align-items: center; */
-    justify-content: center;
     width: 100vw;
+    justify-content: space-between;
+  }
+
+  .repoCardsSection{
+    display: flex;
+    justify-content: center;
+  }
+
+  .loadingSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #84a08b;
   }
