@@ -1,50 +1,75 @@
 .backButton {
-    width: 70px;
-    height: 40px;
-    border-radius: 5px;
-    font-size: small;
-    position: sticky;
-    top: 10px;
-    color: #fff;
-    background-color: #0a1f0f;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid #84a08b;
-  }
+  width: 70px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: small;
+  position: sticky;
+  top: 10px;
+  color: #fff;
+  background-color: #0a1f0f;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #84a08b;
+}
 
-  .backButton:hover{
-    color: #84a08b;
-  }
+.backButton:hover {
+  color: #84a08b;
+}
 
-  .backButtonSection{
-    margin: 20px 20px;
-  }
+.backButtonSection {
+  margin: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
 
-  .apiWorksHeader{
-    margin-top: -100px;
-    color:#3c4b40;
-    font-size: medium;
-    text-align: center;
-    text-decoration: underline;
-  }
+.errorLink{
+  color: #fff;
+  margin-top: 6px;
+  font-size: small
+}
+
+.apiWorksHeader {
+  margin-top: -100px;
+  color: #3c4b40;
+  font-size: medium;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.repoPageContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: #fff;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.repoCardsSection {
+  display: flex;
+  justify-content: center;
+}
+
+.loadingSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  color: #84a08b;
+}
+
+@media only screen and (max-width: 600px) {
 
   .repoPageContainer{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    color: white;
-    width: 100vw;
-    justify-content: space-between;
-  }
-
-  .repoCardsSection{
-    display: flex;
-    justify-content: center;
+    overflow: hidden;
   }
 
   .loadingSection{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #84a08b;
+    margin-top: 40%;
+    text-align: center;
   }
+
+  .apiWorksHeader {
+    margin-top: -300px;
+  }
+}

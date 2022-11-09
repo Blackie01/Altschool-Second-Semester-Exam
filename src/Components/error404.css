@@ -11,4 +11,13 @@
     color: #fff;
   }
  
- 
+ button{
+  color: #8bad94;
+  border: 1px solid #8bad94;
+  width: 200px;
+  height: 70px;
+  font-size: 20px;
+  background-color: #0a1f0f;
+  text-decoration: none;
+  cursor: pointer;
+ }

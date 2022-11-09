@@ -1,35 +1,40 @@
-.repoCardBullets{
-    width: 600px;
-    height: 40px;
-    background-color: #081b0d;
-    border-radius: 10px;
-    padding: 0px;
-    display: flex;
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    align-items: center;
-    color: #84a08b;
-    text-decoration: inherit;
+.repoCardBullets {
+  width: 600px;
+  height: 40px;
+  background-color: #081b0d;
+  border-radius: 10px;
+  padding: 0px;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  color: #84a08b;
+  text-decoration: inherit;
 }
 
-.repoCardBullets:hover{
-    background-color: #0a1f0f;
-    border: 1px solid #84a08b;
+.repoCardBullets:hover {
+  background-color: #0a1f0f;
+  border: 1px solid #84a08b;
 }
 
-h2{
-    margin: 0;
+h2 {
+  margin: 0;
 }
 
-.card-container{
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.card-container {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 a:-webkit-any-link {
-    text-decoration: none;
-  }
+  text-decoration: none;
+}
 
+@media only screen and (max-width: 600px) {
+  .repoCardBullets{
+    width: 90vw;
+  }
+}

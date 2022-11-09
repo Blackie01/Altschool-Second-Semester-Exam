@@ -11,3 +11,18 @@
   color: #fff;
 }
 
+@media only screen and (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100v;
+  }
+  
+  .main-container {
+    background-color: #0a1f0f;
+    padding-bottom: 20px;
+    height: 100vh;
+    color: #fff;
+  }
+}

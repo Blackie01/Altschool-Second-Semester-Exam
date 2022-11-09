@@ -8,9 +8,6 @@ const ApiWorks = () => {
   // set state for each repo
   const [repo, setRepo] = useState([]);
 
-  // set state for the pages
-  //   const [repoPages, setRepoPages] = useState(1);
-
   // states for paginatoin
   const [currentPage, setCurrentPage] = useState(1);
   const [repoPerPage] = useState(4);
@@ -41,6 +38,10 @@ const ApiWorks = () => {
       <section className="backButtonSection">
         <Link to="/">
           <button className="backButton">Go back</button>
+        </Link>
+
+        <Link to="*">
+          <p className="errorLink">error404</p>
         </Link>
       </section>
 

@@ -4,7 +4,6 @@ import "./repoItemMore.css";
 import { Link } from "react-router-dom";
 
 // component for the read more page
-
 function ReadMore() {
   let { id } = useParams();
 
@@ -20,20 +19,44 @@ function ReadMore() {
 
       <div className="readMore-container">
         <h1 className="readMore-title">{finalData[0].name}</h1>
+        {/* <section className="text-and-image-container"> */}
         <div className="details-container">
           <h3>
-            <span className="detail">Description:</span> {finalData[0].description || "('_') oops. no info"}
+            <span className="detail">Description:</span>{" "}
+            {finalData[0].description || "('_') oops. no info"}
           </h3>
           <h3>
-            <span className="detail">Creator:</span> <a target="_blank" rel="noopener noreferrer" className="linkedIn" href={finalData[0].owner.html_url}>{finalData[0].owner.login}</a> 
+            <span className="detail">Creator:</span>{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="linkedIn"
+              href={finalData[0].owner.html_url}
+            >
+              {finalData[0].owner.login}
+            </a>
           </h3>
           <h3>
-            <span className="detail">Tech:</span> {finalData[0].language}
+            <span className="detail">Tech:</span>{" "}
+            {finalData[0].language || "('_') oops. no info"}
           </h3>
           <h3>
-            <span className="detail">Link:</span> <a target="_blank" rel="noopener noreferrer" className="linkedIn" href={finalData[0].html_url}>Click Link</a> 
+            <span className="detail">Link:</span>{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="linkedIn"
+              href={finalData[0].html_url}
+            >
+              Find repo on GitHub
+            </a>
           </h3>
         </div>
+
+        {/* <div>
+            <img></img>
+          </div>
+        </section> */}
       </div>
     </section>
   );

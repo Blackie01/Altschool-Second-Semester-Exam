@@ -16,15 +16,3 @@ function LandingPage() {
 }
 
 export default LandingPage;
-
-/*  
-On the home page
-we'd have the name
-then we'd have some intro text typing out (all text can type out and all)
-will detail matric number
-then have the project name
-then a button that leads to the page for the repo
-then a button that goes to test the error boundary
-we can use a timeout to delay the button from showing till the things type out. 
-
-*/
