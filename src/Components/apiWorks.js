@@ -40,7 +40,7 @@ const ApiWorks = () => {
           <button className="backButton">Go back</button>
         </Link>
 
-        <Link to="*">
+        <Link to="/error404">
           <p className="errorLink">error404</p>
         </Link>
       </section>
